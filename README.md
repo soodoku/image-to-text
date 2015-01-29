@@ -6,7 +6,7 @@ Uses Tesseract to get text from pdfs
 
 ## Text from Searchable pdfs
 
-Used pyPdf to get text from searchable pdfs. The script is for tailored for getting data from Wisconsin Political Ads Database Storyboards.
+Used pyPdf to get text from searchable pdfs. The script is for tailored for getting data from [Wisconsin Political Ads Database](http://wiscadproject.wisc.edu/) Storyboards.
 
 ## License
 
