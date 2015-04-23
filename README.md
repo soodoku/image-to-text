@@ -2,13 +2,9 @@
 
 Uses Tesseract to get text from pdfs. Reads pdfs from a specified directory and outputs text files to another directory. 
 
-#### License
+### Usage
 
-Scripts are released under the [MIT License](https://github.com/soodoku/Lat-Long-to-Zip/blob/master/License%20for%20Scripts.md).
-
-#### Usage
-
-pdf2txt_r2.py [options] <pdf directory>
+<code>pdf2txt_r2.py [options] pdf_directory</code>
 
 #### Options:
 <pre><code>
@@ -21,9 +17,11 @@ pdf2txt_r2.py [options] <pdf directory>
   -r, --resume          Resume OCR to Text (default: False)
 </code></pre>             
 
-#### USAGE EXAMPLE :-
-<code>
-    python pdf2txt_r2.py pdf_dir
-</code>  
-    The script will be post process all PDF files in 'pdf_dir' directory and save
-    the output text files to the 'text' directory
+#### Example:
+<code>python pdf2txt_r2.py pdf_dir </code>  
+
+The script will be post process all PDF files in 'pdf_dir' directory and save the output text files to the 'text' directory
+
+### License
+Scripts are released under the [MIT License](https://github.com/soodoku/Lat-Long-to-Zip/blob/master/License%20for%20Scripts.md).
+
