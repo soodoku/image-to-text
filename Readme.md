@@ -1,6 +1,10 @@
 ## Image to Text
 
-Uses Tesseract to get text from pdfs. Reads pdfs from a specified directory and outputs text files to another directory. 
+The script uses Tesseract to get text from pdfs. It reads pdfs from a specified directory and outputs text files to another directory. 
+
+The text that is recovered can have lots of errors. To fix some of these errors, you may want to use this [Turbo Search And Replace](https://github.com/soodoku/search-and-replace). 
+
+A more general overview of how to convert paper to digitial carrying more thoughts on optimizing the process can be read here: [A Quick Scan: From Paper to Digital] (http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
 
 ### Usage
 
