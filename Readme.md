@@ -8,10 +8,10 @@ A more general overview of how to convert paper to digitial carrying more though
 
 ### Usage
 
-<code>pdf2txt_r2.py [options] pdf_directory</code>
+`pdf2txt_r2.py [options] pdf_directory`
 
-#### Options:
-<pre><code>
+#### Command Line Options:
+```
   -h, --help            show this help message and exit
   -d DPI, --dpi=DPI     JPEG Resolution in DPI (default: 400)
   -j JPGDIR, --jpgdir=JPGDIR
@@ -19,13 +19,13 @@ A more general overview of how to convert paper to digitial carrying more though
   -t TXTDIR, --textdir=TXTDIR
                         Text output directory (default: text)
   -r, --resume          Resume OCR to Text (default: False)
-</code></pre>             
+```            
 
 #### Example:
-<code>python pdf2txt_r2.py pdf_dir </code>  
+`python pdf2txt_r2.py pdf_dir`
 
-The script will be post process all PDF files in 'pdf_dir' directory and save the output text files to the 'text' directory
+The script will be post process all PDF files in `pdf_dir` directory and save the output text files to the `text` directory
 
 ### License
-Scripts are released under the [MIT License](https://github.com/soodoku/Lat-Long-to-Zip/blob/master/License%20for%20Scripts.md).
+Scripts are released under the [MIT License](License.md).
 
