@@ -2,7 +2,7 @@
 
 The script uses [Tesseract](https://github.com/tesseract-ocr) to get text from pdfs. It reads pdfs from a specified directory and outputs text files to another directory. Tesseract works well for documents with simple structure and fonts that are easily parsed but generally struggles with more complex layout. To fix errors in the recovered text, you may want to use [Edit Distance Based Search and Replace](https://github.com/soodoku/search-and-replace), exploiting the fact that errors in OCR tend of systematic. 
 
-Rather than use Tesseract, you can also use [Abbyy FineReader](https://github.com/soodoku/abbyyR) or [Captricity](https://github.com/soodoku/captr).
+Rather than use Tesseract, you can also use [Abbyy FineReader](https://github.com/soodoku/abbyyR) or [Captricity](https://github.com/soodoku/captr). And to estimate the error rate of OCR, you may want to use [recognize](https://github.com/soodoku/recognize).
 
 For a general overview of how to convert paper to digitial and how to optimize that process, see [A Quick Scan: From Paper to Digital] (http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
 
