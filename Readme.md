@@ -27,5 +27,4 @@ A more general overview of how to convert paper to digitial carrying more though
 The script will be post process all PDF files in `pdf_dir` directory and save the output text files to the `text` directory
 
 ### License
-Scripts are released under the [MIT License](License.md).
-
+Scripts are released under the [MIT License](https://opensource.org/licenses/MIT).
