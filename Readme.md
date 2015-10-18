@@ -1,14 +1,14 @@
-## Image to Text
+### Image to Text
 
-The script uses Tesseract to get text from pdfs. It reads pdfs from a specified directory and outputs text files to another directory. 
+The script uses [Tesseract](https://github.com/tesseract-ocr) to get text from pdfs. It reads pdfs from a specified directory and outputs text files to another directory. Tesseract works well for documents with simple structure and fonts that are easily parsed but generally struggles with more complex layout. To fix errors in the recovered text, you may want to use [Edit Distance Based Search and Replace](https://github.com/soodoku/search-and-replace), exploiting the fact that errors in OCR tend of systematic. 
 
-The text that is recovered can have lots of errors. To fix some of these errors, you may want to use this [Turbo Search And Replace](https://github.com/soodoku/search-and-replace). 
+Rather than use Tesseract, you can also use [Abbyy FineReader](https://github.com/soodoku/abbyyR) or [Captricity](https://github.com/soodoku/captr).
 
-A more general overview of how to convert paper to digitial carrying more thoughts on optimizing the process can be read here: [A Quick Scan: From Paper to Digital] (http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
+For a general overview of how to convert paper to digitial and how to optimize that process, see [A Quick Scan: From Paper to Digital] (http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
 
-### Usage
+#### Usage
 
-`pdf2txt_r2.py [options] pdf_directory`
+`pdf2txt.py [options] pdf_directory`
 
 #### Command Line Options:
 ```
@@ -22,7 +22,7 @@ A more general overview of how to convert paper to digitial carrying more though
 ```            
 
 #### Example:
-`python pdf2txt_r2.py pdf_dir`
+`python pdf2txt.py pdf_dir`
 
 The script will be post process all PDF files in `pdf_dir` directory and save the output text files to the `text` directory
 
