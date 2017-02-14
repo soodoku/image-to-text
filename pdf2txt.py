@@ -44,16 +44,16 @@ def parse_command_line(argv):
     
     parser.add_option("-d", "--dpi", action="store", 
                       type="int", dest="dpi", default=JPG_RESOLUTION_DPI,
-                      help="JPEG Resolution in DPI (default: %d)" % (JPG_RESOLUTION_DPI))
+                      help="JPEG Resolution in DPI (default: {0:d})".format((JPG_RESOLUTION_DPI)))
     parser.add_option("-j", "--jpgdir", action="store", 
                       type="string", dest="jpgdir", default=JPG_OUTPUT_DIR,
-                      help="JPEG output directory (default: %s)" % (JPG_OUTPUT_DIR))
+                      help="JPEG output directory (default: {0!s})".format((JPG_OUTPUT_DIR)))
     parser.add_option("-t", "--textdir", action="store", 
                       type="string", dest="txtdir", default=TEXT_OUTPUT_DIR,
-                      help="Text output directory (default: %s)" % (TEXT_OUTPUT_DIR))
+                      help="Text output directory (default: {0!s})".format((TEXT_OUTPUT_DIR)))
     parser.add_option("-r", "--resume", action="store_true", 
                       dest="resume", default=RESUME_OCR,
-                      help="Resume OCR to Text (default: %s)" % (RESUME_OCR))
+                      help="Resume OCR to Text (default: {0!s})".format((RESUME_OCR)))
     return parser.parse_args(argv)
     
 def getSize(filename):
@@ -76,7 +76,7 @@ def jpg_to_text(options, filename, rootdir):
     extdir = rootdir + '/' + os.path.dirname(relpath)
     fname = extdir + '/' + os.path.basename(relpath)
     fname = os.path.splitext(fname)[0]
-    print("OCR JPG to TEXT: %s" % (filename))
+    print("OCR JPG to TEXT: {0!s}".format((filename)))
     try:
         if not os.path.exists(extdir):
             os.makedirs(extdir)
@@ -101,7 +101,7 @@ def pdf_to_jpg(filename, rootdir, dpi):
     extdir = rootdir + '/' + os.path.dirname(relpath)
     fname = extdir + '/' + os.path.basename(relpath)
     fname = os.path.splitext(fname)[0] + '-%d.jpg'
-    print("Convert PDF to JPG: %s" % (filename))
+    print("Convert PDF to JPG: {0!s}".format((filename)))
     try:
         if not os.path.exists(extdir):
             os.makedirs(extdir)
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     
     signal.signal(signal.SIGINT, signal_handler)
     
-    print("%s - r2 (2013/06/15)\n" % (os.path.basename(sys.argv[0])))
+    print("{0!s} - r2 (2013/06/15)\n".format((os.path.basename(sys.argv[0]))))
     
     (options, args) = parse_command_line(sys.argv)
 
