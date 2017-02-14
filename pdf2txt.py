@@ -10,7 +10,6 @@ import sys
 import optparse
 import csv
 import fnmatch
-import logging
 import subprocess
 
 # ===========================================================================================================
