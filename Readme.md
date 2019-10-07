@@ -4,7 +4,7 @@ The script uses [Tesseract](https://github.com/tesseract-ocr) to get text from p
 
 Rather than use Tesseract, you can also use [Abbyy FineReader](https://github.com/soodoku/abbyyR) or [Captricity](https://github.com/soodoku/captr). And to estimate the error rate of OCR, you may want to use [recognize](https://github.com/soodoku/recognize).
 
-For a general overview of how to convert paper to digitial and how to optimize that process, see [A Quick Scan: From Paper to Digital] (http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
+For a general overview of how to convert paper to digitial and how to optimize that process, see [A Quick Scan: From Paper to Digital](http://gbytes.gsood.com/2014/05/28/a-quick-scan-from-paper-to-digital-data/)
 
 #### Usage
 
